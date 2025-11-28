@@ -46,8 +46,9 @@ void reverse(string str){
     for(int i=0;i<str.length();i++){
         push(str[i]);
     }
+    str.clear();
     for(int i=0;i<str.length();i++){
-        pop();
+        str.push_back(pop());
     }
 }
 
